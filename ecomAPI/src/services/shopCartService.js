@@ -37,7 +37,7 @@ let addShopCart = (data) => {
                         if (+data.quantity > res.stock) {
                             resolve({
                                 errCode: 2,
-                                errMessage: `Chỉ còn ${res.stock} sản phẩm`,
+                                errMessage: `Only ${res.stock} items left`,
                                 quantity: res.stock
                             })
                         } else {
@@ -49,7 +49,7 @@ let addShopCart = (data) => {
                         if ((+cart.quantity + (+data.quantity)) > res.stock) {
                             resolve({
                                 errCode: 2,
-                                errMessage: `Chỉ còn ${res.stock} sản phẩm`,
+                                errMessage: `Only ${res.stock} items left`,
                                 quantity: res.stock
                             })
                         } else {
@@ -81,7 +81,7 @@ let addShopCart = (data) => {
                     if (data.quantity > res.stock) {
                         resolve({
                             errCode: 2,
-                            errMessage: `Chỉ còn ${res.stock} sản phẩm`,
+                            errMessage: `Only ${res.stock} items left`,
                             quantity: res.stock
                         })
                     } else {

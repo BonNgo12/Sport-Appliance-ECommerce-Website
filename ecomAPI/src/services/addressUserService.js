@@ -77,7 +77,7 @@ let deleteAddressUser = (data) => {
                 } else {
                     resolve({
                         errCode: -1,
-                        errMessage: 'Địa chỉ user không tìm thấy'
+                        errMessage: 'The user\'s address could not be found.'
                     })
                 }
 
@@ -116,7 +116,7 @@ let editAddressUser = (data) => {
                 } else {
                     resolve({
                         errCode: 0,
-                        errMessage: 'Địa chỉ người dùng không tồn tại'
+                        errMessage: 'The user\'s address does not exist.'
                     })
                 }
 

@@ -111,8 +111,8 @@ function MainShop(props) {
                 <div className="left_dorp">
                     <select style={{ outline: 'none' }} onChange={(event) => handleSelectSort(event)} className="sorting">
                         <option value={1}>Sort</option>
-                        <option value={2}>By price</option>
-                        <option value={3}>By name</option>
+                        <option value={2}>By price (low - high)</option>
+                        <option value={3}>By name (a - z)</option>
                     </select>
                     <select style={{ outline: 'none' }} onChange={(event) => handleSelectLimitPage(event)} className="show">
                         <option value={6}>Show 6</option>
@@ -120,7 +120,7 @@ function MainShop(props) {
                         <option value={18}>Show 18</option>
                     </select>
                     <div style={{display:'inline-block',marginLeft:'10px',width:'300px'}}>
-                    <FormSearch title={"tên tên quần áo"} handleOnchange={handleOnchangeSearch} handleSearch={handleSearch} />
+                    <FormSearch title={"name"} handleOnchange={handleOnchangeSearch} handleSearch={handleSearch} />
                     </div>
                     
                     
@@ -143,8 +143,8 @@ function MainShop(props) {
                 </div>
             </div>
             <ReactPaginate
-                previousLabel={'Quay lại'}
-                nextLabel={'Tiếp'}
+                previousLabel={'Previous'}
+                nextLabel={'Next'}
                 breakLabel={'...'}
                 pageCount={count}
                 marginPagesDisplayed={3}

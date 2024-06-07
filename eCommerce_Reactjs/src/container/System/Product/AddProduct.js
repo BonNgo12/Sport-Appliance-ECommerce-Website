@@ -175,7 +175,7 @@ const AddProduct = (props) => {
 
                         <div className="form-row">
                             <div className="form-group col-md-4">
-                                <label htmlFor="inputEmail4">Product name</label>
+                                <label htmlFor="inputEmail4">Product type</label>
                                 <input type="text" value={inputValues.nameDetail} name="nameDetail" onChange={(event) => handleOnChange(event)} className="form-control" id="inputEmail4" />
                             </div>
                             <div className="form-group col-md-4">

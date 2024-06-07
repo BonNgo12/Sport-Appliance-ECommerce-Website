@@ -73,7 +73,7 @@ const SideBar = () => {
                                     </nav>
                                 </div>
 
-                                <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBanner" aria-expanded="false" aria-controls="collapseLayouts">
+                                {/* <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBanner" aria-expanded="false" aria-controls="collapseLayouts">
                                     <div className="sb-nav-link-icon"><i className="fab fa-adversal"></i></div>
                                     Manage banner
                                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -83,8 +83,8 @@ const SideBar = () => {
                                         <Link to={'/admin/list-banner'} className="nav-link" >List banner</Link>
                                         <Link to={'/admin/add-banner'} className="nav-link" >Add banner</Link>
                                     </nav>
-                                </div>
-                                <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSubject" aria-expanded="false" aria-controls="collapseLayouts">
+                                </div> */}
+                                {/* <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSubject" aria-expanded="false" aria-controls="collapseLayouts">
                                     <div className="sb-nav-link-icon"><i className="fab fa-blogger"></i></div>
                                     Manage subject
                                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -94,8 +94,8 @@ const SideBar = () => {
                                         <Link to={'/admin/list-subject'} className="nav-link" >List subject</Link>
                                         <Link to={'/admin/add-subject'} className="nav-link" >Add subject</Link>
                                     </nav>
-                                </div>
-                                <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBlog" aria-expanded="false" aria-controls="collapseLayouts">
+                                </div> */}
+                                {/* <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBlog" aria-expanded="false" aria-controls="collapseLayouts">
                                     <div className="sb-nav-link-icon"><i className="fas fa-feather-alt"></i></div>
                                     Manage post
                                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -105,7 +105,7 @@ const SideBar = () => {
                                         <Link to={'/admin/list-blog'} className="nav-link" >List post</Link>
                                         <Link to={'/admin/add-blog'} className="nav-link" >Add post</Link>
                                     </nav>
-                                </div>
+                                </div> */}
                                 <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseShip" aria-expanded="false" aria-controls="collapseLayouts">
                                     <div className="sb-nav-link-icon"><i className="fas fa-shipping-fast"></i></div>
                                     Manage shipping type
@@ -117,7 +117,7 @@ const SideBar = () => {
                                         <Link to={'/admin/add-typeship'} className="nav-link" >Add shipping type</Link>
                                     </nav>
                                 </div>
-                                <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseVoucher" aria-expanded="false" aria-controls="collapseLayouts">
+                                {/* <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseVoucher" aria-expanded="false" aria-controls="collapseLayouts">
                                     <div className="sb-nav-link-icon"><i className="fas fa-percentage"></i></div>
                                     Manage voucher
                                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -129,7 +129,7 @@ const SideBar = () => {
                                         <Link to={'/admin/add-typevoucher'} className="nav-link" >Add voucher type</Link>
                                         <Link to={'/admin/add-voucher'} className="nav-link" >Add voucher code</Link>
                                     </nav>
-                                </div>
+                                </div> */}
                             </>
                         }
 
@@ -146,13 +146,13 @@ const SideBar = () => {
                         </div>
                         <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseReceipt" aria-expanded="false" aria-controls="collapseLayouts">
                             <div className="sb-nav-link-icon"><i class="fa-solid fa-file-import"></i></div>
-                            Manage import product
+                            Manage Product Import
                             <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
                         </a>
                         <div className="collapse" id="collapseReceipt" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
-                                <Link to={'/admin/list-receipt'} className="nav-link" >List import product</Link>
-                                <Link to={'/admin/add-receipt'} className="nav-link" >Add import product</Link>
+                                <Link to={'/admin/list-receipt'} className="nav-link" >List Product Import</Link>
+                                <Link to={'/admin/add-receipt'} className="nav-link" >Add Product Import</Link>
                             </nav>
                         </div>
                         <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOrder" aria-expanded="false" aria-controls="collapseLayouts">
@@ -202,10 +202,10 @@ const SideBar = () => {
 
                     </div>
                 </div >
-                <div className="sb-sidenav-footer">
+                {/* <div className="sb-sidenav-footer">
                    
                     Manage page
-                </div>
+                </div> */}
             </nav >
         </div >
     )

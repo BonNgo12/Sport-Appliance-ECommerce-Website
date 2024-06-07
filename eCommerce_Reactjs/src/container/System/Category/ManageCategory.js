@@ -152,7 +152,7 @@ const ManageCategory = () => {
                             </tbody>
                         </table>
                         <ReactPaginate
-                            previousLabel={'Back'}
+                            previousLabel={'Previous'}
                             nextLabel={'Next'}
                             breakLabel={'...'}
                             pageCount={count}

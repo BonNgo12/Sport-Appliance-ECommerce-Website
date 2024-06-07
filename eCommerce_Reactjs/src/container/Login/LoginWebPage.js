@@ -196,7 +196,7 @@ const LoginWebPage = () => {
                                 <div className="col-sm-6 brand">
                                     <a href="#" className="logo">MR <span>.</span></a>
                                     <div className="heading">
-                                        <h2>Esier</h2>
+                                        <h2>AE UIT</h2>
                                         <p>Your choice</p>
                                     </div>
 
@@ -215,7 +215,7 @@ const LoginWebPage = () => {
                                                 <input name="password" onChange={(event) => handleOnChange(event)} type="password" id="loginPassword" required />
                                             </div>
                                             <div className="CTA">
-                                                <input onClick={() => handleLogin()} type="submit" value="Đăng nhập" />
+                                                <input onClick={() => handleLogin()} type="submit" value="Log in" />
                                                 <a style={{ cursor: 'pointer', }} className="switch">New account</a>
                                             </div>
                                             <FacebookLoginButton text="Log in with Facebook" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px", marginTop: "40px", marginBottom: "10px" }} onClick={() => signInwithFacebook()} />
@@ -251,7 +251,7 @@ const LoginWebPage = () => {
                                                 <span className="error" />
                                             </div>
                                             <div className="CTA">
-                                                <input onClick={() => handleSaveUser()} type="submit" value="Lưu" id="submit" />
+                                                <input onClick={() => handleSaveUser()} type="submit" value="Save" id="submit" />
                                                 <a style={{ cursor: 'pointer' }} className="switch">I have an account</a>
                                             </div>
                                         </form>

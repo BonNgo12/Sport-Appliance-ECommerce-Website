@@ -25,7 +25,7 @@ function CategoryUser(props) {
                     </ul>
                 </li>
                 <li><img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={orderLogo}></img> <Link to={`/user/order/${props.id}`}>Purchase order</Link></li>
-                <li><img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img> <Link to={`/user/store-voucher/${props.id}`}>Voucher stock</Link></li>
+                {/* <li><img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img> <Link to={`/user/store-voucher/${props.id}`}>Voucher stock</Link></li> */}
             </ul>
         </div>
 

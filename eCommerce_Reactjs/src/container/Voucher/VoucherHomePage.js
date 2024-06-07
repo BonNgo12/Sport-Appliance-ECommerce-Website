@@ -124,7 +124,7 @@ function VoucherHomePage(props) {
             </div>
             <div className="box-pagination">
                 <ReactPaginate
-                    previousLabel={'Back'}
+                    previousLabel={'Previous'}
                     nextLabel={'Next'}
                     breakLabel={'...'}
                     pageCount={count}

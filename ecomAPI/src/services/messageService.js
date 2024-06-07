@@ -16,7 +16,7 @@ let createNewRoom = (data) => {
                 if(room){
                     resolve({
                         errCode: 2,
-                        errMessage: 'Da Co Phong'
+                        errMessage: 'Room is available.'
                     })
                 }else{
                     if(userAdmin){

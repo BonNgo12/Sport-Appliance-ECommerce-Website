@@ -128,7 +128,7 @@ const StockProduct = () => {
                 </div>
             </div>
             <ReactPaginate
-                previousLabel={'Back'}
+                previousLabel={'Previous'}
                 nextLabel={'Next'}
                 breakLabel={'...'}
                 pageCount={count}

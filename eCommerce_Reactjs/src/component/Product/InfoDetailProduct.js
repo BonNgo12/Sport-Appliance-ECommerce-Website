@@ -60,6 +60,7 @@ function InfoDetailProduct(props) {
                 productdetailsizeId: activeLinkId,
                 quantity: quantityProduct,
             }))
+            toast.success("Add to cart successfully!")
         } else {
             toast.error("Log in to add to cart")
         }
@@ -133,10 +134,10 @@ function InfoDetailProduct(props) {
                     <ul className="list">
                         <li>
                             <a className="active" href="#">
-                                <span>Loại</span> : {dataProduct && dataProduct.categoryData ? dataProduct.categoryData.value : ''}</a>
+                                <span>Type</span> : {dataProduct && dataProduct.categoryData ? dataProduct.categoryData.value : ''}</a>
                         </li>
                         <li>
-                            <a href="#"> <span>Trạng thái</span> : {quantity > 0 ? 'In stock' : 'Out of stock'}</a>
+                            <a href="#"> <span>Status</span> : {quantity > 0 ? 'In stock' : 'Out of stock'}</a>
                         </li>
                         <li>
                             <div className="box-size">

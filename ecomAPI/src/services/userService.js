@@ -239,7 +239,7 @@ let handleChangePassword = (data) => {
                 else {
                     resolve({
                         errCode: 2,
-                        errMessage: 'Mật khẩu cũ không chính xác'
+                        errMessage: 'Old password incorrect'
                     })
                 }
 
@@ -524,19 +524,19 @@ let checkPhonenumberEmail = (data) => {
             if (phone) {
                 resolve({
                     isCheck: true,
-                    errMessage: "Số điện thoại đã tồn tại"
+                    errMessage: "The phone number already exists."
                 })
             }
             if (email) {
                 resolve({
                     isCheck: true,
-                    errMessage: "Email đã tồn tại"
+                    errMessage: "The email already exists."
                 })
             }
 
             resolve({
                 isCheck: false,
-                errMessage: "Hợp lệ"
+                errMessage: "Valid"
             })
 
         } catch (error) {

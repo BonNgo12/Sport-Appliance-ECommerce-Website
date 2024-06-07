@@ -17,7 +17,7 @@ let handleCreateNewAllCode = (data) => {
                 if (res) {
                     resolve({
                         errCode: 2,
-                        errMessage: 'Mã code đã tồn tại !'
+                        errMessage: 'The code already exists !'
                     })
                 } else {
                     await db.Allcode.create({

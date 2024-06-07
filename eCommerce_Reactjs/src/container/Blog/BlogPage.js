@@ -124,8 +124,8 @@ let handleOnchangeSearch = (keyword) =>{
                         </div>
                     
                          <ReactPaginate
-                         previousLabel={'Quay lại'}
-                         nextLabel={'Tiếp'}
+                         previousLabel={'Previous'}
+                         nextLabel={'Next'}
                          breakLabel={'...'}
                          pageCount={count}
                          marginPagesDisplayed={3}

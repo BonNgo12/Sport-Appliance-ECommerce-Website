@@ -15,7 +15,7 @@ let sendSimpleEmail = async (dataSend) => {
         let info = await transporter.sendMail({
             from: '"BiNgo2706 👻" <dotanthanhvlog@gmail.com>', // sender address
             to: dataSend.email, // list of receivers
-            subject: "Xác thực email | PTITSHOP", // Subject line
+            subject: "Email verification | AEUITSHOP", // Subject line
             html: getBodyHTMLEmailVerify(dataSend)
         });
     }
@@ -23,33 +23,33 @@ let sendSimpleEmail = async (dataSend) => {
         let info = await transporter.sendMail({
             from: '"BiNgo2706 👻" <dotanthanhvlog@gmail.com>', // sender address
             to: dataSend.email, // list of receivers
-            subject: "Xác nhận quên mật khẩu | PTITSHOP", // Subject line
+            subject: "Password reset confirmation | AEUITSHOP", // Subject line
             html: getBodyHTMLEmailForgotPassword(dataSend)
         });
     }
 }
 let getBodyHTMLEmailVerify = (dataSend) => {
     let fullname = `${dataSend.firstName} ${dataSend.lastName}`
-    let result = `<h3>Xin chào ${fullname}!</h3>
-        <p>Bạn nhận được email này vì đã thực hiện lệnh xác thực email!</p>
-        <p>Bui lòng click vào đường link bên dưới để xác nhận và hoàn tất thủ tục xác minh email của bạn</p>
+    let result = `<h3>Hi ${fullname}!</h3>
+        <p>You received this email because you requested email verification.!</p>
+        <p>Please click on the link below to confirm and complete the email verification process.</p>
         <div>
             <a href="${dataSend.redirectLink}" target=""_blank>Click here</a>
         </div>
-        <div>Xin cảm ơn !</div>
+        <div>Thank you !!!</div>
     `
 
     return result;
 }
 let getBodyHTMLEmailForgotPassword = (dataSend) => {
     let fullname = `${dataSend.firstName} ${dataSend.lastName}`
-    let result = `<h3>Xin chào ${fullname}!</h3>
-        <p>Bạn nhận được email này vì đã thực hiện lệnh quên mật khẩu!</p>
-        <p>Bui lòng click vào đường link bên dưới để xác nhận quên mật khẩu và lấy lại mật khẩu của bạn</p>
+    let result = `<h3>Hi ${fullname}!</h3>
+        <p>You received this email because you requested a password reset!</p>
+        <p>Please click on the link below to confirm the password reset and recover your password.</p>
         <div>
             <a href="${dataSend.redirectLink}" target=""_blank>Click here</a>
         </div>
-        <div>Xin cảm ơn !</div>
+        <div>Thank you !!!</div>
     `
 
     return result;
