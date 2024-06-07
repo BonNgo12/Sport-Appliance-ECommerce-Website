@@ -39,5 +39,12 @@
         right: 65px;
         font-size: 12px;
     }
+
+    @media (min-width: 991px) {
+        .nav.navbar-nav.center_nav.justify-content-center{
+            margin: 0 0 0 130px;
+        }
+    }
+    
    
 } 

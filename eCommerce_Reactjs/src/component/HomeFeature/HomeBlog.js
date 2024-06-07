@@ -4,7 +4,7 @@ import HomeBlogItem from './HomeBlogItem';
 function HomeBlog(props) {
     return (
         <section className="blog-area section-gap">
-            <div className="container">
+            {/* <div className="container">
                 <HeaderContent mainContent="New blog post" infoContent="Latest fashion blog posts"></HeaderContent>
                 <div className="row">
                     {props.data && props.data.length > 0 &&
@@ -18,7 +18,7 @@ function HomeBlog(props) {
 
                    
                 </div>
-            </div>
+            </div> */}
         </section>
 
     );

@@ -5,6 +5,7 @@ function Footer(props) {
     <div>
       <footer className="footer-area section_gap">
         <div className="container">
+          <div className='grab-content'>
           <div className="row">
             <div className="col-lg-2 col-md-6 single-footer-widget">
               <h4>Top Products</h4>
@@ -49,6 +50,7 @@ function Footer(props) {
             Copyright ©2022 AE UIT <i className="fa fa-heart-o" aria-hidden="true" />  <a href="https://colorlib.com" target="_blank"></a>
               {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
 
+          </div>
           </div>
         </div>
       </footer>

@@ -93,7 +93,7 @@ const Header = props => {
                         <div className="collapse navbar-collapse offset w-100" id="navbarSupportedContent">
                             <div className="row w-100 mr-0">
                                 <div className="col-lg-9 pr-0">
-                                    <ul className="nav navbar-nav center_nav pull-right">
+                                    <ul className="nav navbar-nav center_nav justify-content-center">
                                         <li className="nav-item">
                                             <NavLink exact to="/" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
@@ -106,7 +106,7 @@ const Header = props => {
                                                 Store
                                             </NavLink>
                                         </li>
-                                        <li className="nav-item ">
+                                        {/* <li className="nav-item ">
                                             <NavLink to="/blog" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
                                                 News
@@ -117,12 +117,12 @@ const Header = props => {
                                                 activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
                                                 Discount
                                             </NavLink>
-                                        </li>
-                                        <li className="nav-item">
+                                        </li> */}
+                                        {/* <li className="nav-item">
                                             <NavLink to="/about" className="nav-link" activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
                                             Introduction
                                             </NavLink>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                                 <div className="col-lg-3 pr-0">
