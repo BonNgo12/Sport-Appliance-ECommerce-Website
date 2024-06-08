@@ -96,30 +96,30 @@ const Header = props => {
                                     <ul className="nav navbar-nav center_nav justify-content-center">
                                         <li className="nav-item">
                                             <NavLink exact to="/" className="nav-link"
-                                                activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
+                                                activeClassName="selected" activeStyle={{ color: '#b60b01' }}>
                                                 Home page
                                             </NavLink>
                                         </li>
                                         <li className="nav-item ">
                                             <NavLink to="/shop" className="nav-link"
-                                                activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
+                                                activeClassName="selected" activeStyle={{ color: '#b60b01' }}>
                                                 Store
                                             </NavLink>
                                         </li>
                                         {/* <li className="nav-item ">
                                             <NavLink to="/blog" className="nav-link"
-                                                activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
+                                                activeClassName="selected" activeStyle={{ color: '#b60b01' }}>
                                                 News
                                             </NavLink>
                                         </li>
                                         <li className="nav-item">
                                             <NavLink to="/voucher" className="nav-link"
-                                                activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
+                                                activeClassName="selected" activeStyle={{ color: '#b60b01' }}>
                                                 Discount
                                             </NavLink>
                                         </li> */}
                                         {/* <li className="nav-item">
-                                            <NavLink to="/about" className="nav-link" activeClassName="selected" activeStyle={{ color: '#71cd14' }}>
+                                            <NavLink to="/about" className="nav-link" activeClassName="selected" activeStyle={{ color: '#b60b01' }}>
                                             Introduction
                                             </NavLink>
                                         </li> */}

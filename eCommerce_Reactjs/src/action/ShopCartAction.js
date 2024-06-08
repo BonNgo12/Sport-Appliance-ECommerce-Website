@@ -12,7 +12,7 @@ export const addItemCartStart = (data) => {
 
                 dispatch(getItemCartStart(data.userId))
                 dispatch(addItemCartSuccess())
-
+                toast.success("Add to cart successfully!")
 
             } else {
                 dispatch(addItemCartFaild());

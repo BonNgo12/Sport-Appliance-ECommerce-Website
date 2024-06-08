@@ -60,7 +60,6 @@ function InfoDetailProduct(props) {
                 productdetailsizeId: activeLinkId,
                 quantity: quantityProduct,
             }))
-            toast.success("Add to cart successfully!")
         } else {
             toast.error("Log in to add to cart")
         }

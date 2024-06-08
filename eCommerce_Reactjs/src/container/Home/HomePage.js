@@ -91,7 +91,7 @@ function HomePage(props) {
 
 
             <MainFeature></MainFeature>
-            <ProductFeature title={"Product suggestions"} data={dataProductRecommend}></ProductFeature>
+            {/* <ProductFeature title={"Product suggestions"} data={dataProductRecommend}></ProductFeature> */}
             <ProductFeature title={"Featured products"} data={dataProductFeature}></ProductFeature>
             <NewProductFeature title="New products" description="Exciting new releases that captivate viewers" data={dataNewProductFeature}></NewProductFeature>
             {/* <HomeBlog data={dataNewBlog} /> */}

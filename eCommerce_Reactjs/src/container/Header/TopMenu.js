@@ -22,7 +22,7 @@ const TopMenu = props => {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="float-left">
-                            <p>Phone number: 0123456789 </p>
+                            <p>Phone number: 0906462497 </p>
                             <p>email: nguyenkhanhduy.dilinh@gmail.com</p>
                         </div>
                     </div>
