@@ -89,10 +89,10 @@ function DetailProductPage(props) {
                         </li>
 
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" id="review-tab" data-toggle="tab" href="#review"
                                 role="tab" aria-controls="review" aria-selected="false">Review</a>
-                        </li>
+                        </li> */}
 
                     </ul>
                     <div className="tab-content" id="myTabContent">
@@ -106,14 +106,14 @@ function DetailProductPage(props) {
                         </div>
 
 
-                        <div className="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        {/* <div className="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                             <ReviewProduct />
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
                 {user && dataProductRecommend && dataProductRecommend.length > 0 &&
-                    <ProductFeature title={"Sản phẩm bạn quan tâm"} data={dataProductRecommend}></ProductFeature>
+                    <ProductFeature title={"Products you are interested in"} data={dataProductRecommend}></ProductFeature>
 
                 }
             </section>

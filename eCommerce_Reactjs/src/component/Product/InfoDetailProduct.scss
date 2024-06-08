@@ -11,12 +11,12 @@
         cursor: pointer;
 
         &:hover{
-            color: #71CD14;
-            border-color: #71CD14;
+            color: #b7808c;
+            border-color: #b7808c;
         }
         &.active{
-            color: #71CD14 !important;
-            border-color: #71CD14 !important;
+            color: #b7808c !important;
+            border-color: #b7808c !important;
         }
     }
 
@@ -93,3 +93,35 @@
         }
       }
   }
+
+  .s_product_text h2{
+    color: #b7808c;
+  }
+
+  .s_product_text .list li a.active{
+    color: #b7808c;
+  }
+
+  .main_btn {
+    background-color: #b7808c;
+    border: 1px solid black;
+  }
+
+  .main_btn:hover {
+    background: transparent;
+    color: #b7808c !important;
+}
+
+.product_description_area .nav.nav-tabs li a.active {
+  background: #b7808c;
+  color: #fff;
+  border-color: #b7808c;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev{
+  border: 1px solid black;
+}
+
+.banner_area .banner_inner .banner_content .page_link a:hover{
+  color: #b7808c;
+}

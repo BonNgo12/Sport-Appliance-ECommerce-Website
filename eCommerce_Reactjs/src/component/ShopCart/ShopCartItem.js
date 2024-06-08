@@ -85,7 +85,7 @@ function ShopCartItem(props) {
 
             </td>
             <td style={{ textAlign: 'center' }}>
-                <h5 style={{ color: '#71cd14' }}>{CommonUtils.formatter.format(quantity * props.price)}</h5>
+                <h5 style={{ color: '#b7808c' }}>{CommonUtils.formatter.format(quantity * props.price)}</h5>
             </td>
             {props.isOrder === false &&
                 <>

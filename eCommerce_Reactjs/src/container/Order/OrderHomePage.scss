@@ -10,14 +10,14 @@
         align-items: center;
         
         span{
-            border-left: .0625rem solid #71cd14;
+            border-left: .0625rem solid #b7808c;
             padding-left: .9375rem;
             margin-left: 20px;
             font-size: 1.35rem;
             line-height: 1.875rem;
             height: 1.875rem;
             text-transform: capitalize;
-            color: #71cd14;
+            color: #b7808c;
             font-weight: 600;
         }
     }
@@ -43,7 +43,7 @@
                 .content-left{
                     display: flex;
                     align-items: center;
-                    color: #71cd14;
+                    color: #b7808c;
                     font-size: 18px;
                     span{
                         margin-left: 10px;
@@ -105,7 +105,7 @@
                         color: #929292;
                     }
                     .text-change{
-                        color: #0055aa;
+                        color: #b7808c;
                         margin-left: 20px;
                         cursor: pointer;
                     }
@@ -170,8 +170,8 @@
                 font-size: 14px;
                 cursor: pointer;
                 &.active{
-                    color: #71cd14;
-                    border-color: #71cd14;
+                    color: #b7808c;
+                    border-color: #b7808c;
                 }
                 &.activeOnl{
                     color: #fc7f0b;
@@ -212,7 +212,7 @@
                 }
                 .money{
                     font-size: 22px;
-                    color: #71cd14;
+                    color: #b7808c;
                 }
                }
             }

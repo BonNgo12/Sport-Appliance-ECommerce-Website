@@ -42,7 +42,7 @@
 
     @media (min-width: 991px) {
         .nav.navbar-nav.center_nav.justify-content-center{
-            margin: 0 0 0 130px;
+            margin: 0 0 0 240px;
         }
     }
 
@@ -67,10 +67,35 @@
 }
 
 .single-product .product-img .p_icon{
-    background-color: #b7808c;
+    background-color: #8b8183;
     opacity: 0.65;
 }
 
 .single-product:hover .product-btm h4{
     color: #f11b49;
 }
+
+.single-product .product-img .p_icon a:hover {
+    color: #fff;
+    background: #1a120b;
+}
+
+.header_area .navbar .nav .nav-item .nav-link {
+    font: 500 26px / 80px "Heebo", sans-serif;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    padding: 0px;
+    display: inline-block;
+}
+
+.section_gap_top {
+    padding-top: 50px;
+}
+
+// .slick-slide {
+//     margin: 0 20px;
+// }
+
+// .slick-track{
+//     width: 4000px;
+// }
