@@ -83,31 +83,31 @@ function VnpayPaymentPage(props) {
                         <div className="row mt-2">
                             <div className="col-md-12"><label className="labels">Bank</label><select value={inputValues.bankCode}  onChange={(event) => handleOnChange(event)} name="bankCode"  id="inputState" className="form-control">
                                 
-                            <option value=''>  Không chọn </option>
-                            <option value='VNPAYQR'>  Ngân hàng VNPAYQR</option>
-                            <option value='NCB'>  Ngân hàng NCB</option>
-                            <option value='SCB'>  Ngân hàng SCB</option>
-                            <option value='SACOMBANK'>  Ngân hàng SACOMBANK</option>
-                            <option value='EXIMBANK'>  Ngân hàng EXIMBANK</option>
-                            <option value='MSBANK'>  Ngân hàng MSBANK</option>
-                            <option value='NAMABANK'>  Ngân hàng NAMABANK</option>
-                            <option value='VISA'>  Ngân hàng VISA</option>
-                            <option value='VNMART'>  Ngân hàng VNMART</option>
-                            <option value='VIETINBANK'>  Ngân hàng VIETINBANK</option>
-                            <option value='VIETCOMBANK'>  Ngân hàng VIETCOMBANK</option>
-                            <option value='HDBANK'>  Ngân hàng HDBANK</option>
-                            <option value='DONGABANK'>  Ngân hàng Dong A</option>
-                            <option value='TPBANK'>  Ngân hàng Tp Bank</option>
-                            <option value='OJB'>  Ngân hàng OceanBank</option>
-                            <option value='BIDV'>  Ngân hàng BIDV</option>
-                            <option value='TECHCOMBANK'>  Ngân hàng Techcombank</option>
-                            <option value='VPBANK'>  Ngân hàng VPBank</option>
-                            <option value='AGRIBANK'>  Ngân hàng AGRIBANK</option>
-                            <option value='MBBANK'>  Ngân hàng MBBank</option>
-                            <option value='ACB'>  Ngân hàng ACB</option>
-                            <option value='OCB'>  Ngân hàng OCB</option>
-                            <option value='SHB'>  Ngân hàng SHB</option>
-                            <option value='IVB'>  Ngân hàng IVB</option>
+                            <option value=''>No Select </option>
+                            <option value='VNPAYQR'>VNPAYQR</option>
+                            <option value='NCB'>NCB</option>
+                            <option value='SCB'>SCB</option>
+                            <option value='SACOMBANK'>SACOMBANK</option>
+                            <option value='EXIMBANK'>EXIMBANK</option>
+                            <option value='MSBANK'>MSBANK</option>
+                            <option value='NAMABANK'>NAMABANK</option>
+                            <option value='VISA'>VISA</option>
+                            <option value='VNMART'>VNMART</option>
+                            <option value='VIETINBANK'>VIETINBANK</option>
+                            <option value='VIETCOMBANK'>VIETCOMBANK</option>
+                            <option value='HDBANK'>HDBANK</option>
+                            <option value='DONGABANK'>Dong A</option>
+                            <option value='TPBANK'>Tp Bank</option>
+                            <option value='OJB'>OceanBank</option>
+                            <option value='BIDV'>BIDV</option>
+                            <option value='TECHCOMBANK'>Techcombank</option>
+                            <option value='VPBANK'>VPBank</option>
+                            <option value='AGRIBANK'>AGRIBANK</option>
+                            <option value='MBBANK'>MBBank</option>
+                            <option value='ACB'>ACB</option>
+                            <option value='OCB'>OCB</option>
+                            <option value='SHB'>SHB</option>
+                            <option value='IVB'>IVB</option>
                                 
                             </select></div>
                         </div>

@@ -118,7 +118,7 @@ const VoucherModal = (props) => {
 
                     {' '}
                     <Button onClick={handleCloseModal}>
-                        Cancle
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>

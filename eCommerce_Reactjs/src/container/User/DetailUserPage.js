@@ -138,9 +138,9 @@ function DetailUserPage(props) {
                             }
                         </div>
 
-                        {inputValues.isActiveEmail === 0 &&
+                        {/* {inputValues.isActiveEmail === 0 &&
                             <span onClick={() => handleSendEmail()} className="text-verify">Verify</span>
-                        }
+                        } */}
 
                     </div>
                 </div>
@@ -181,7 +181,7 @@ function DetailUserPage(props) {
                                 />
                                 <label style={{ backgroundColor: '#eee', borderRadius: '5px', padding: '6px', cursor: 'pointer' }} className="label-upload" htmlFor="previewImg"
 
-                                >Download image <i className="fas fa-upload"></i></label>
+                                >Upload image <i className="fas fa-upload"></i></label>
 
                             </div>
                         </div>

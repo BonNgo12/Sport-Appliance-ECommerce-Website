@@ -64,7 +64,7 @@ const ReviewModal = (props) => {
                     </Button>
                     {' '}
                     <Button onClick={handleCloseModal}>
-                        Cancle
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>

@@ -104,7 +104,7 @@ const AddressUsersModal = (props) => {
                     </Button>
                     {' '}
                     <Button onClick={handleCloseModal}>
-                        Cancle
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>

@@ -227,7 +227,7 @@ const AddProduct = (props) => {
                                 <br></br>
                                 <label style={{ backgroundColor: '#eee', borderRadius: '5px', padding: '6px', cursor: 'pointer' }} className="label-upload" htmlFor="previewImg"
 
-                                >Download image <i className="fas fa-upload"></i></label>
+                                >Upload image <i className="fas fa-upload"></i></label>
                                 <div style={{ backgroundImage: `url(${inputValues.imageReview})` }} onClick={() => openPreviewImage()} className="box-image"></div>
                             </div>
                         </div>

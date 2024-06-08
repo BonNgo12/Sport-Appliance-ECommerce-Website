@@ -118,7 +118,7 @@ const AddImageModal = (props) => {
                     </Button>
                     {' '}
                     <Button onClick={handleCloseModal}>
-                        Cancle
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>

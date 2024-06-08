@@ -117,7 +117,7 @@ const AddSizeModal = (props) => {
                     </Button>
                     {' '}
                     <Button onClick={handleCloseModal}>
-                        Cancle
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>

@@ -196,7 +196,7 @@ const LoginWebPage = () => {
                                 <div className="col-sm-6 brand">
                                     <a href="#" className="logo">MR <span>.</span></a>
                                     <div className="heading">
-                                        <h2>AE UIT</h2>
+                                        <h2>UIT Sport</h2>
                                         <p>Your choice</p>
                                     </div>
 

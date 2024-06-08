@@ -223,7 +223,7 @@ function OrderHomePage(props) {
                     <NavLink to="/" className="navbar-brand logo_h">
                         <img src="/resources/img/logo.png" alt="" />
                     </NavLink>
-                    <span>Thanh Toán</span>
+                    <span>Payment</span>
                 </div>
                 <div className="wrap-address-order">
                     <div className="border-top-address-order"></div>
@@ -231,13 +231,13 @@ function OrderHomePage(props) {
                         <div className="content-up">
                             <div className="content-left">
                                 <i className="fas fa-map-marker-alt"></i>
-                                <span>Địa Chỉ Nhận Hàng</span>
+                                <span>Delivery Address</span>
                             </div>
                             {isChangeAdress === true &&
                                 <div className="content-right">
                                     <div className="wrap-add-address">
                                         <i className="fas fa-plus"></i>
-                                        <span onClick={() => handleOpenAddressUserModal()}>Thêm địa chỉ mới</span>
+                                        <span onClick={() => handleOpenAddressUserModal()}>Add new address</span>
                                     </div>
 
                                 </div>
@@ -285,9 +285,9 @@ function OrderHomePage(props) {
                             }
 
                             <div className="content-right">
-                                <span className="text-default">Mặc định</span>
+                                <span className="text-default">Default</span>
                                 {isChangeAdress === false &&
-                                    <span onClick={() => setisChangeAdress(true)} className="text-change">Thay đổi</span>
+                                    <span onClick={() => setisChangeAdress(true)} className="text-change">Change</span>
                                 }
 
                             </div>
@@ -296,7 +296,7 @@ function OrderHomePage(props) {
                             <div className="box-action">
 
                                 <div onClick={() => setisChangeAdress(false)} className="wrap-back">
-                                    <span >Trở về</span>
+                                    <span >Back</span>
                                 </div>
                             </div>
                         }
@@ -312,10 +312,10 @@ function OrderHomePage(props) {
                                         <thead>
                                             <tr>
 
-                                                <th scope="col">Sản phẩm</th>
-                                                <th scope="col">Giá</th>
-                                                <th style={{ textAlign: 'center' }} scope="col">Số lượng</th>
-                                                <th style={{ textAlign: 'center' }} scope="col">Tổng tiền</th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th style={{ textAlign: 'center' }} scope="col">Quantity</th>
+                                                <th style={{ textAlign: 'center' }} scope="col">Total amount</th>
 
                                             </tr>
                                         </thead>
@@ -340,7 +340,7 @@ function OrderHomePage(props) {
 
 
                                 <h6>
-                                    Chọn đơn vị vận chuyển
+                                Select Shipping Carrier
                                 </h6>
                                 <div>
                                     {typeShip && typeShip.length > 0 &&
@@ -366,21 +366,21 @@ function OrderHomePage(props) {
                                 <div className="content-left">
                                     <div className="wrap-voucher">
                                         <img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img>
-                                        <span className="name-easier">Easier voucher</span>
-                                        <span onClick={() => handleOpenModal()} className="choose-voucher">Chọn Mã</span>
+                                        <span className="name-easier">UIT Sport voucher</span>
+                                        <span onClick={() => handleOpenModal()} className="choose-voucher">Select code</span>
                                         {dataVoucher && dataVoucher.voucherData &&
-                                            <span className="choose-voucher">Mã voucher: {dataVoucher.voucherData.codeVoucher}</span>
+                                            <span className="choose-voucher">Voucher code: {dataVoucher.voucherData.codeVoucher}</span>
                                         }
 
                                     </div>
                                     <div className="wrap-note">
-                                        <span>Lời Nhắn:</span>
-                                        <input value={note} onChange={(event) => setnote(event.target.value)} type="text" placeholder="Lưu ý cho Người bán..." />
+                                        <span>Message:</span>
+                                        <input value={note} onChange={(event) => setnote(event.target.value)} type="text" placeholder="Note to Seller..." />
                                     </div>
                                 </div>
                                 <div className="content-right">
                                     <div className="wrap-price">
-                                        <span className="text-total">Tổng thanh toán ({dataCart && dataCart.length} sản phẩm): </span>
+                                        <span className="text-total">Total amount ({dataCart && dataCart.length} Product): </span>
 
                                         <span className="text-price">{dataVoucher && dataVoucher.voucherData ? CommonUtils.formatter.format(totalPriceDiscount(price, dataVoucher) + priceShip) : CommonUtils.formatter.format(price + (+priceShip))}</span>
                                     </div>
@@ -399,15 +399,15 @@ function OrderHomePage(props) {
                     <div className="content-top">
 
                         <div style={{ display: 'flex', gap: '10px' }}>
-                            <span>Phương Thức Thanh Toán</span>
-                            <div onClick={() => setactiveTypePayment(1)} className={activeTypePayment === 1 ? 'box-type-payment active' : 'box-type-payment'}>Thanh toán Online</div>
+                            <span>Payment method</span>
+                            <div onClick={() => setactiveTypePayment(1)} className={activeTypePayment === 1 ? 'box-type-payment active' : 'box-type-payment'}>Pay Online</div>
 
-                            <div onClick={() => setactiveTypePayment(0)} className={activeTypePayment === 0 ? 'box-type-payment active' : 'box-type-payment'}>Thanh toán khi nhận hàng</div>
+                            <div onClick={() => setactiveTypePayment(0)} className={activeTypePayment === 0 ? 'box-type-payment active' : 'box-type-payment'}>COD</div>
                         </div>
                         {activeTypePayment != 0 &&
                             <div className='box-payment'>
-                                <div onClick={() => setactiveTypeOnlPayment(1)} className={activeTypeOnlPayment === 1 ? 'box-type-payment activeOnl' : 'box-type-payment'}>Thanh toán PAYPAL</div>
-                                <div onClick={() => setactiveTypeOnlPayment(2)} className={activeTypeOnlPayment === 2 ? 'box-type-payment activeOnl' : 'box-type-payment'}>Thanh toán VNPAY</div>
+                                <div onClick={() => setactiveTypeOnlPayment(1)} className={activeTypeOnlPayment === 1 ? 'box-type-payment activeOnl' : 'box-type-payment'}>PAYPAL</div>
+                                <div onClick={() => setactiveTypeOnlPayment(2)} className={activeTypeOnlPayment === 2 ? 'box-type-payment activeOnl' : 'box-type-payment'}>VNPAY</div>
                             </div>
                         }
 
@@ -418,24 +418,24 @@ function OrderHomePage(props) {
                     <div className="content-bottom">
                         <div className="wrap-bottom">
                             <div className="box-flex">
-                                <div className="head">Tổng tiền hàng</div>
+                                <div className="head">Total amount</div>
                                 <div >{CommonUtils.formatter.format(price)}</div>
                             </div>
                             <div className="box-flex">
-                                <div className="head">Tổng giảm giá</div>
+                                <div className="head">Total discount</div>
                                 <div >{dataVoucher && dataVoucher.voucherData ? CommonUtils.formatter.format(price - totalPriceDiscount(price, dataVoucher)) : CommonUtils.formatter.format(0)}</div>
                             </div>
                             <div className="box-flex">
-                                <div className="head">Phí vận chuyển</div>
+                                <div className="head">Cost of delivery</div>
                                 <div >{CommonUtils.formatter.format(priceShip)}</div>
                             </div>
 
                             <div className="box-flex">
-                                <div className="head">Tổng thanh toán:</div>
+                                <div className="head">Total payment:</div>
                                 <div className="money">${dataVoucher && dataVoucher.voucherData ? CommonUtils.formatter.format(totalPriceDiscount(price, dataVoucher) + priceShip) : CommonUtils.formatter.format(price + (+priceShip))}</div>
                             </div>
                             <div className="box-flex">
-                                <a onClick={() => handleSaveOrder()} className="main_btn">Đặt hàng</a>
+                                <a onClick={() => handleSaveOrder()} className="main_btn">Order</a>
                             </div>
 
                         </div>
