@@ -570,6 +570,77 @@ let getStatisticStockProduct = (data) => {
         }
     })
 }
+
+// let getStatisticStockProduct = (data) => {
+//     return new Promise(async (resolve, reject) => {
+//         try {
+//             // Thiết lập bộ lọc ban đầu cho ProductDetailSize
+//             let objectFilter = {
+//                 include: [
+//                     { model: db.Allcode, as: 'sizeData', attributes: ['value', 'code'] },
+//                 ],
+//                 raw: true,
+//                 nest: true
+//             };
+
+//             // Áp dụng phân trang nếu limit và offset được cung cấp
+//             if (data.limit && data.offset) {
+//                 objectFilter.limit = +data.limit;
+//                 objectFilter.offset = +data.offset;
+//             }
+
+//             // Lấy chi tiết kích thước sản phẩm cùng với số lượng
+//             let res = await db.ProductDetailSize.findAndCountAll(objectFilter);
+
+//             // Xử lý từng chi tiết kích thước sản phẩm
+//             for (let i = 0; i < res.rows.length; i++) {
+//                 let productDetailSize = res.rows[i];
+
+//                 // Lấy chi tiết phiếu nhập và đơn hàng
+//                 let receiptDetails = await db.ReceiptDetail.findAll({ where: { productDetailSizeId: productDetailSize.id } });
+//                 let orderDetails = await db.OrderDetail.findAll({ where: { productId: productDetailSize.id } });
+
+//                 // Tính toán số lượng tồn kho
+//                 let quantity = receiptDetails.reduce((acc, curr) => acc + curr.quantity, 0);
+//                 for (let orderDetail of orderDetails) {
+//                     let order = await db.OrderProduct.findOne({ where: { id: orderDetail.orderId } });
+//                     if (order.statusId != 'S7') {
+//                         quantity -= orderDetail.quantity;
+//                     }
+//                 }
+
+//                 // Lấy thông tin chi tiết sản phẩm và sản phẩm
+//                 productDetailSize.productDetaildData = await db.ProductDetail.findOne({
+//                     where: { id: productDetailSize.productdetailId }
+//                 });
+//                 productDetailSize.productdData = await db.Product.findOne({
+//                     where: { id: productDetailSize.productDetaildData.productId },
+//                     include: [
+//                         { model: db.Allcode, as: 'brandData', attributes: ['value', 'code'] },
+//                         { model: db.Allcode, as: 'categoryData', attributes: ['value', 'code'] },
+//                         { model: db.Allcode, as: 'statusData', attributes: ['value', 'code'] },
+//                     ],
+//                     raw: true,
+//                     nest: true
+//                 });
+
+//                 // Gán số lượng tồn kho vào kết quả
+//                 productDetailSize.stock = quantity;
+//             }
+
+//             // Trả về kết quả
+//             resolve({
+//                 errCode: 0,
+//                 data: res.rows,
+//                 count: res.count
+//             });
+
+//         } catch (error) {
+//             reject(error);
+//         }
+//     });
+// };
+
 module.exports = {
     getCountCardStatistic: getCountCardStatistic,
     getCountStatusOrder: getCountStatusOrder,

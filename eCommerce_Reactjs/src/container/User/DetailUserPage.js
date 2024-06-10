@@ -130,12 +130,12 @@ function DetailUserPage(props) {
                         <div className="box-email-verify">
                             <span className="text-black-50">{inputValues.email}
                             </span>
-                            {inputValues.isActiveEmail === 0 &&
+                            {/* {inputValues.isActiveEmail === 0 &&
                                 <i style={{ color: '#dc0707' }} className="fas fa-times-circle"></i>
                             }
                             {inputValues.isActiveEmail === 1 &&
                                 <i style={{ color: 'green' }} className="fas fa-check-circle"></i>
-                            }
+                            } */}
                         </div>
 
                         {/* {inputValues.isActiveEmail === 0 &&

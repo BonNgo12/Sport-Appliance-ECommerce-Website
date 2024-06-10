@@ -190,7 +190,7 @@ const SideBar = () => {
                                         <Link to={'/admin/turnover'} className="nav-link" >revenue statistics</Link>
 
                                         <Link to={'/admin/profit'} className="nav-link" >profit statistics</Link>
-                                        <Link to={'/admin/stock-product'} className="nav-link" >inventory statistics</Link>
+                                        {/* <Link to={'/admin/stock-product'} className="nav-link" >inventory statistics</Link> */}
 
 
                                     </nav>

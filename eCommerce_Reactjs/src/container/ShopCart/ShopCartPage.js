@@ -177,12 +177,12 @@ function ShopCartPage(props) {
                 <div className="box-shopcart-bottom">
                     <div className="content-left">
                         <div className="wrap-voucher">
-                            <img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img>
-                            <span className="name-easier">Easier voucher</span>
+                            {/* <img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img> */}
+                            {/* <span className="name-easier">Easier voucher</span>
                             <span onClick={() => handleOpenModal()} className="choose-voucher">Select or Enter Code</span>
                             {dataVoucher && dataVoucher.voucherData &&
                                 <span className="choose-voucher">Voucher code: {dataVoucher.voucherData.codeVoucher}</span>
-                            }
+                            } */}
 
                         </div>
                     </div>
