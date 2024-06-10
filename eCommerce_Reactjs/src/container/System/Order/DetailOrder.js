@@ -197,11 +197,11 @@ function DetailOrder(props) {
                             <div className="box-shopcart-bottom">
                                 <div className="content-left">
                                     <div className="wrap-voucher">
-                                        <img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img>
-                                        <span className="name-easier">Easier voucher</span>
+                                        {/* <img width="20px" height="20px" style={{ marginLeft: "-3px" }} src={storeVoucherLogo}></img>
+                                        <span className="name-easier">voucher</span>
 
 
-                                        <span className="choose-voucher">Voucher code: {DataOrder && DataOrder.voucherData && DataOrder.voucherData.codeVoucher}</span>
+                                        <span className="choose-voucher">Voucher code: {DataOrder && DataOrder.voucherData && DataOrder.voucherData.codeVoucher}</span> */}
 
 
                                     </div>
@@ -233,7 +233,7 @@ function DetailOrder(props) {
                 <div className="wrap-payment">
                     <div className="content-top" style={{ display: 'flex', gap: '10px' }}>
                         <span>Payment Method</span>
-                        <div className='box-type-payment active'>{DataOrder.isPaymentOnlien == 0 ? 'Thanh toán tiền mặt' : 'Thanh toán onlien'}</div>
+                        <div className='box-type-payment active'>{DataOrder.isPaymentOnlien == 0 ? 'Cash on delivery (COD)' : 'Online payment'}</div>
 
                     </div>
                     <div className="content-top" style={{ display: 'flex', gap: '10px' }}>
@@ -241,11 +241,11 @@ function DetailOrder(props) {
                         <div className='box-type-payment active'>{DataOrder.statusOrderData && DataOrder.statusOrderData.value}</div>
 
                     </div>
-                    <div className="content-top" style={{ display: 'flex', gap: '10px' }}>
+                    {/* <div className="content-top" style={{ display: 'flex', gap: '10px' }}>
                         <span>Delivery image</span>
                         <div onClick={() => openPreviewImage(DataOrder.image)} className="box-img-preview" style={{ backgroundImage: `url(${DataOrder.image})`, width: '200px', height: '200px', borderRadius: "10px" }}></div>
 
-                    </div>
+                    </div> */}
                     <div className="content-bottom">
                         {DataOrder && DataOrder.addressUser &&
                             <div className="wrap-bottom">

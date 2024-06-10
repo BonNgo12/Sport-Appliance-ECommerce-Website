@@ -43,7 +43,7 @@ const Turnover = (props) => {
                     updatedAt: moment.utc(item.updatedAt).local().format('DD/MM/YYYY HH:mm:ss'),
                     typeShip: item.typeShipData.type,
                     codeVoucher: item.voucherData.codeVoucher,
-                    paymentType: item.isPaymentOnlien == 0 ? 'Cash payment' : 'online payment',
+                    paymentType: item.isPaymentOnlien == 0 ? 'Cash on delivery' : 'online payment',
                     statusOrder: item.statusOrderData.value,
                     totalpriceProduct: item.totalpriceProduct,
 

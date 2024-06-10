@@ -132,7 +132,7 @@ const ManageOrder = () => {
                                                 <td>{moment.utc(item.createdAt).local().format('DD/MM/YYYY HH:mm:ss')}</td>
                                                 <td>{item.typeShipData.type}</td>
                                                 <td>{item.voucherData.codeVoucher}</td>
-                                                <td>{item.isPaymentOnlien == 0 ? 'Cash payment' : 'online payment'}</td>
+                                                <td>{item.isPaymentOnlien == 0 ? 'Cash on delivery' : 'online payment'}</td>
                                                 <td>{item.statusOrderData.value}</td>
                                                 <td>{item.shipperData && item.shipperData.firstName + " " + item.shipperData.lastName + " - " + item.shipperData.phonenumber}</td>
                                                 <td>

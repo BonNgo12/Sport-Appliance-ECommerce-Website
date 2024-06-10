@@ -40,7 +40,7 @@ const Profit = (props) => {
                     updatedAt: moment.utc(item.updatedAt).local().format('DD/MM/YYYY HH:mm:ss'),
                     typeShip: item.typeShipData.type,
                     codeVoucher: item.voucherData.codeVoucher,
-                    paymentType: item.isPaymentOnlien == 0 ? 'Cash payment' : 'online payment',
+                    paymentType: item.isPaymentOnlien == 0 ? 'Cash on delivery' : 'online payment',
                     statusOrder: item.statusOrderData.value,
                     totalpriceProduct: item.totalpriceProduct,
                     importPrice: item.importPrice,
@@ -172,7 +172,7 @@ const Profit = (props) => {
                                                 <td>{moment.utc(item.updatedAt).local().format('DD/MM/YYYY HH:mm:ss')}</td>
                                                 <td>{item.typeShipData.type}</td>
                                                 <td>{item.voucherData.codeVoucher}</td>
-                                                <td>{item.isPaymentOnlien == 0 ? 'Cash payment' : 'online payment'}</td>
+                                                <td>{item.isPaymentOnlien == 0 ? 'Cash on delivery' : 'online payment'}</td>
                                                 <td>{item.statusOrderData.value}</td>
                                                 <td>{CommonUtils.formatter.format(item.totalpriceProduct)}</td>
                                                 <td>{CommonUtils.formatter.format(item.importPrice)}</td>

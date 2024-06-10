@@ -400,14 +400,14 @@ function OrderHomePage(props) {
 
                         <div style={{ display: 'flex', gap: '10px' }}>
                             <span>Payment method</span>
-                            <div onClick={() => setactiveTypePayment(1)} className={activeTypePayment === 1 ? 'box-type-payment active' : 'box-type-payment'}>Pay Online</div>
+                            {/* <div onClick={() => setactiveTypePayment(1)} className={activeTypePayment === 1 ? 'box-type-payment active' : 'box-type-payment'}>Pay Online</div> */}
 
                             <div onClick={() => setactiveTypePayment(0)} className={activeTypePayment === 0 ? 'box-type-payment active' : 'box-type-payment'}>COD</div>
                         </div>
                         {activeTypePayment != 0 &&
                             <div className='box-payment'>
-                                <div onClick={() => setactiveTypeOnlPayment(1)} className={activeTypeOnlPayment === 1 ? 'box-type-payment activeOnl' : 'box-type-payment'}>PAYPAL</div>
-                                <div onClick={() => setactiveTypeOnlPayment(2)} className={activeTypeOnlPayment === 2 ? 'box-type-payment activeOnl' : 'box-type-payment'}>VNPAY</div>
+                                {/* <div onClick={() => setactiveTypeOnlPayment(1)} className={activeTypeOnlPayment === 1 ? 'box-type-payment activeOnl' : 'box-type-payment'}>PAYPAL</div>
+                                <div onClick={() => setactiveTypeOnlPayment(2)} className={activeTypeOnlPayment === 2 ? 'box-type-payment activeOnl' : 'box-type-payment'}>VNPAY</div> */}
                             </div>
                         }
 
